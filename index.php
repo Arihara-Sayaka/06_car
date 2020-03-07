@@ -54,25 +54,20 @@ class Taxi extends Car
     return $this->passenger;
   }
 
-  public function setPassenger($passenger)
-  {
-    $this->passenger = $passenger;
+  public function pickUp($passenger){
+  return $this->passenger = $passenger;
+  echo '乗車人数は' . $passenger . '人です。';
   }
 
-  if ($passenger = ) {
-  echo '降車人数に誤りがあります';
+  public function lower($passenger){
+    if ($this->passenger - $passenger > 0){
+    echo $passenger . '人降車しました。';
+    } else {
+    echo '降車人数に誤りがあります。';
+    }
   }
 
-  public function pickUp($pickUp){
-    echo '乗車人数は' . $pickUp .'です。'
-  };
-
-  public function lower($lower){
-    echo $lower . '人降車しました。'
-  };
 }
-
-
 
 // 以下を実行した時にエラーがでないようにして下さい
 // Carクラスのインスタンスを生成
