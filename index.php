@@ -43,7 +43,6 @@ class Car {
 }
 
 // 以下にCarクラスを継承したTaxiクラスを記述して下さい
-
 class Taxi extends Car
 {
   //乗車人数を管理するプロパティ
